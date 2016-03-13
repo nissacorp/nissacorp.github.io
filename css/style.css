@@ -1,0 +1,228 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+*[id^='cyo'],
+*[id^='cyo'] ~ * {
+  display: none;
+}
+*[id^='cyo']:last-of-type ~ * {
+  display: block;
+}
+*[id^='cyo']:target ~ * {
+  display: block;
+}
+*[id^='cyo']:target ~ *[id^='cyo'],
+*[id^='cyo']:target ~ *[id^='cyo'] ~ * {
+  display: none;
+}
+*[id='cyo_debug']:target ~ * {
+  display: block !important;
+}
+*[id='cyo_debug']:target ~ hr[id] {
+  display: none;
+}
+a[href^='#cyo'] {
+  font-size: 0.9em;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 3px;
+  display: inline-block;
+  margin-bottom: 3px;
+  text-align: center;
+  padding: 0.5em 1em 0.5em 0.35em;
+  border-radius: 0.4em;
+  text-decoration: none;
+  margin-top: 0;
+  vertical-align: bottom;
+  -webkit-transition: border-color 0.33s, background-color 0.33s, color 0.133s, border-bottom-width 0.133s, margin-top 0.133s;
+  transition: border-color 0.33s, background-color 0.33s, color 0.133s, border-bottom-width 0.133s, margin-top 0.133s;
+  color: #444;
+  border-color: transparent;
+}
+a[href^='#cyo']:hover {
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.3));
+  margin-top: -2px;
+  border-bottom-width: 5px;
+}
+a[href^='#cyo']:active {
+  margin-top: 3px;
+  border-bottom-width: 0;
+}
+a[href^='#cyo']:hover,
+a[href^='#cyo']:focus {
+  color: #c3c3c3;
+  border-top-color: #6a6a6a;
+  border-bottom-color: #111111;
+  background-color: #444;
+}
+a[href^='#cyo'][href$=':ok'],
+a[href^='#cyo'][href$='.ok'] {
+  color: #2A8FBD;
+  border-color: transparent;
+}
+a[href^='#cyo'][href$=':ok']:hover,
+a[href^='#cyo'][href$='.ok']:hover,
+a[href^='#cyo'][href$=':ok']:focus,
+a[href^='#cyo'][href$='.ok']:focus {
+  color: #ebf6fb;
+  border-top-color: #59b2da;
+  border-bottom-color: #17506a;
+  background-color: #2A8FBD;
+}
+a[href^='#cyo'][href$=':yes'],
+a[href^='#cyo'][href$='.yes'] {
+  color: #7FAF1B;
+  border-color: transparent;
+}
+a[href^='#cyo'][href$=':yes']:hover,
+a[href^='#cyo'][href$='.yes']:hover,
+a[href^='#cyo'][href$=':yes']:focus,
+a[href^='#cyo'][href$='.yes']:focus {
+  color: #ebf8d1;
+  border-top-color: #a9e036;
+  border-bottom-color: #3f570d;
+  background-color: #7FAF1B;
+}
+a[href^='#cyo'][href$=':no'],
+a[href^='#cyo'][href$='.no'] {
+  color: #F02311;
+  border-color: transparent;
+}
+a[href^='#cyo'][href$=':no']:hover,
+a[href^='#cyo'][href$='.no']:hover,
+a[href^='#cyo'][href$=':no']:focus,
+a[href^='#cyo'][href$='.no']:focus {
+  color: #ffffff;
+  border-top-color: #f56659;
+  border-bottom-color: #921409;
+  background-color: #F02311;
+}
+a[href^='#cyo'][href$=':warn'],
+a[href^='#cyo'][href$='.warn'] {
+  color: #FBB829;
+  border-color: transparent;
+}
+a[href^='#cyo'][href$=':warn']:hover,
+a[href^='#cyo'][href$='.warn']:hover,
+a[href^='#cyo'][href$=':warn']:focus,
+a[href^='#cyo'][href$='.warn']:focus {
+  color: #ffffff;
+  border-top-color: #fcd174;
+  border-bottom-color: #bb8003;
+  background-color: #FBB829;
+}
+a[href^='#cyo'][href$=':info'],
+a[href^='#cyo'][href$='.info'] {
+  color: #6CDFEA;
+  border-color: transparent;
+}
+a[href^='#cyo'][href$=':info']:hover,
+a[href^='#cyo'][href$='.info']:hover,
+a[href^='#cyo'][href$=':info']:focus,
+a[href^='#cyo'][href$='.info']:focus {
+  color: #ffffff;
+  border-top-color: #afeef4;
+  border-bottom-color: #1ec2d2;
+  background-color: #6CDFEA;
+}
+a[href^='#cyo'][href$=':q'],
+a[href^='#cyo'][href$='.q'] {
+  color: #2A8FBD;
+  border-color: transparent;
+}
+a[href^='#cyo'][href$=':q']:hover,
+a[href^='#cyo'][href$='.q']:hover,
+a[href^='#cyo'][href$=':q']:focus,
+a[href^='#cyo'][href$='.q']:focus {
+  color: #ebf6fb;
+  border-top-color: #59b2da;
+  border-bottom-color: #17506a;
+  background-color: #2A8FBD;
+}
+a[href^='#cyo']::before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  width: 24px;
+  text-align: center;
+}
+a[href^='#cyo']:hover::before {
+  font-size: 1.5em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+a[href^='#cyo']::before {
+  content: "\f054";
+}
+a[href^='#cyo'][href$=':ok']::before,
+a[href^='#cyo'][href$='.ok']::before {
+  content: "\f054";
+}
+a[href^='#cyo'][href$=':yes']::before,
+a[href^='#cyo'][href$='.yes']::before {
+  content: "\f00c";
+}
+a[href^='#cyo'][href$=':no']::before,
+a[href^='#cyo'][href$='.no']::before {
+  content: "\f00d";
+}
+a[href^='#cyo'][href$=':warn']::before,
+a[href^='#cyo'][href$='.warn']::before {
+  content: "\f0e7";
+}
+a[href^='#cyo'][href$=':info']::before,
+a[href^='#cyo'][href$='.info']::before {
+  content: '\f12a';
+}
+a[href^='#cyo'][href$=':q']::before,
+a[href^='#cyo'][href$='.q']::before {
+  content: '\f128';
+}
+a[href^='#cyo'][href$=':retry']::before,
+a[href^='#cyo'][href$='.retry']::before {
+  content: '\f021';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -1pt;
+}
+:root {
+  font-family: 'Open Sans', sans-serif;
+  padding: 2em;
+  min-height: 100vh;
+  background-image: -webkit-radial-gradient(center farthest-corner, transparent, rgba(0, 0, 0, 0.15));
+  background-image: radial-gradient(center farthest-corner, transparent, rgba(0, 0, 0, 0.15));
+}
+body {
+  width: 75vw;
+  min-width: 500px;
+  margin: 0 auto;
+}
+code,
+a > code {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 0.25ch 1ch;
+  border-radius: 0.5ch;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+li {
+  margin-top: 1ex;
+  margin-bottom: 1ex;
+}
+*[id^='cyo']:target {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+pre > code {
+  display: block;
+  padding: 1ch 2ch;
+}
